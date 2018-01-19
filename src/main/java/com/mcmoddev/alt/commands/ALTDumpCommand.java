@@ -68,7 +68,7 @@ public class ALTDumpCommand extends CommandBase {
 
 				String basic = GSON.toJson(table);
 				String prettified = prettyPrinter.toJson(parser.parse(basic));
-				FileUtils.writeStringToFile(f, prettified);
+				FileUtils.writeStringToFile(f, prettified, "UTF8", false);
 			} catch( IOException e ) {
 				AdditionalLootTables.logger.error("Error writing loot table %s : %s", f.getPath(), e.getMessage());
 			}

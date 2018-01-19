@@ -28,7 +28,7 @@ import net.minecraft.crash.CrashReport;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.discovery.ASMDataTable.ASMData;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-
+@SuppressWarnings("unused")
 public class PluginLoader {
 
 	private class PluginData {
